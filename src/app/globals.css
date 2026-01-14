@@ -1,26 +1,44 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* DaisyUI base */
+@plugin "daisyui" {
+  themes: light --default, night;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* 🌤️ LIGHT THEME — Eye-soothing, eco-friendly */
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+
+  --color-primary: #4CAF50;       /* Soft green */
+  --color-secondary: #81C784;     /* Light leaf green */
+  --color-accent: #A5D6A7;        /* Pastel green */
+  --color-neutral: #2E3A2F;       /* Dark muted green */
+  --color-base-100: #F6FBF7;      /* Soft off-white */
+  --color-base-200: #E8F3EA;      /* Light green tint */
+  --color-base-300: #D7EBDD;      /* Card background */
+  --color-info: #64B5F6;
+  --color-success: #66BB6A;
+  --color-warning: #FFCA28;
+  --color-error: #EF5350;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 🌙 DARK THEME — Calm, premium, no harsh contrast */
+@plugin "daisyui/theme" {
+  name: "night";
+
+  --color-primary: #66BB6A;       /* Fresh green */
+  --color-secondary: #4DB6AC;     /* Teal-green */
+  --color-accent: #81C784;
+  --color-neutral: #E0E0E0;
+  --color-base-100: #0F1A14;      /* Deep forest */
+  --color-base-200: #16261C;      /* Section bg */
+  --color-base-300: #1E3326;      /* Cards */
+  --color-info: #4FC3F7;
+  --color-success: #81C784;
+  --color-warning: #FFD54F;
+  --color-error: #E57373;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+/* Dark mode selector */
+@custom-variant dark (&:where([data-theme=night], [data-theme=night] *));
