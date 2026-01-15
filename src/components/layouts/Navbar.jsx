@@ -30,8 +30,8 @@ const Navbar = () => {
         setUser(JSON.parse(storedUser));
       } else {
         const mockUser = {
-          name: 'John Doe',
-          image: 'https://i.pravatar.cc/40', 
+          name: 'Komolika',
+          image: 'https://i.ibb.co.com/7x6jMyBz/komolika.webp', 
         };
         setUser(mockUser);
         localStorage.setItem('user', JSON.stringify(mockUser));

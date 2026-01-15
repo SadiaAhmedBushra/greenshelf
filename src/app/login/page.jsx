@@ -11,10 +11,10 @@ const LoginPage = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    if (email === 'user@example.com' && password === 'password123') {
+    if (email === 'komolika@example.com' && password === 'Komolika') {
       localStorage.setItem('user', JSON.stringify({
-        name: 'John Doe',
-        image: 'https://i.pravatar.cc/40',
+        name: 'Komolika',
+        image: 'https://i.ibb.co.com/7x6jMyBz/komolika.webp',
       }));
 
       Cookies.set('auth', 'true', { expires: 1 });
