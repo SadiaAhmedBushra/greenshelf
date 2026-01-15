@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Bamboo Toothbrush",
+    "description": "Eco-friendly bamboo toothbrush with soft biodegradable bristles. A sustainable alternative to plastic toothbrushes.",
+    "price": 3.99,
+    "category": "Personal Care",
+    "image": "https://i.ibb.co/0jV0TXD3/Bamboo-Toothbrush.jpg",
+    "stock": 120,
+    "rating": 4.6
+  },
+  {
+    "name": "Reusable Stainless Steel Water Bottle",
+    "description": "Durable stainless steel water bottle that keeps drinks hot or cold for hours. Perfect for daily use.",
+    "price": 18.5,
+    "category": "Lifestyle",
+    "image": "https://i.ibb.co.com/Z1zGw9rL/Reusable-Stainless-Steel-Water-Bottle.jpg",
+    "stock": 80,
+    "rating": 4.8
+  },
+  {
+    "name": "Organic Cotton Tote Bag",
+    "description": "Reusable organic cotton tote bag for shopping and daily errands. Lightweight, washable, and plastic-free.",
+    "price": 6.75,
+    "category": "Accessories",
+    "image": "https://i.ibb.co.com/cSdBB8pV/Organic-Cotton-Tote-Bag.jpg",
+    "stock": 150,
+    "rating": 4.5
+  },
+  {
+    "name": "Reusable Bamboo Cutlery Set",
+    "description": "Portable bamboo cutlery set including fork, spoon, knife, and straw. Ideal for travel and office use.",
+    "price": 9.99,
+    "category": "Kitchen",
+    "image": "https://i.ibb.co.com/s9XTjvL2/Reusable-Bamboo-Cutlery-Set.jpg",
+    "stock": 60,
+    "rating": 4.7
+  },
+  {
+    "name": "Compostable Phone Case",
+    "description": "Biodegradable phone case made from plant-based materials. Strong, stylish, and eco-conscious.",
+    "price": 14.99,
+    "category": "Electronics",
+    "image": "https://i.ibb.co.com/9mZswLJ1/Compostable-Phone-Case.jpg",
+    "stock": 45,
+    "rating": 4.4
+  },
+  {
+    "name": "Beeswax Food Wraps",
+    "description": "Natural beeswax food wraps used to replace plastic wrap. Reusable and compostable.",
+    "price": 12.5,
+    "category": "Kitchen",
+    "image": "https://i.ibb.co.com/LdC0Dn8j/Beeswax-Food-Wraps.webp",
+    "stock": 70,
+    "rating": 4.6
+  },
+  {
+    "name": "Eco-Friendly Notebook",
+    "description": "Notebook made from recycled paper with a minimal design. Perfect for students and professionals.",
+    "price": 5.25,
+    "category": "Office",
+    "image": "https://i.ibb.co.com/wh8t9bj6/Eco-Friendly-Notebook.webp",
+    "stock": 200,
+    "rating": 4.3
+  },
+  {
+    "name": "Solar Powered Desk Lamp",
+    "description": "Energy-efficient desk lamp powered by solar energy. Ideal for workspaces and study tables.",
+    "price": 22.99,
+    "category": "Home",
+    "image": "https://i.ibb.co.com/HLGsFzNv/Solar-Powered-Desk-Lamp.jpg",
+    "stock": 30,
+    "rating": 4.7
+  }
+]

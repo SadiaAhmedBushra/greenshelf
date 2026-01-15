@@ -1,12 +1,9 @@
-import { Geist, Geist_Mono, Poppins } from "next/font/google";
+import { Poppins } from 'next/font/google';
 import "./globals.css";
-import Head from "next/head";
 import Navbar from "@/components/layouts/Navbar";
 import Footer from "@/components/layouts/Footer";
 
-const poppins =Poppins({
-  weight: ["400", "700"],
-});
+const poppins = Poppins({ subsets: ['latin'], weight: ['400', '700'] });
 
 export const metadata = {
   title: "Create Next App",
@@ -17,15 +14,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning
         className={`${poppins.className} antialiased`}
       >
         <header className="py-2 md:w-11/12 mx-auto">
           <Navbar />
         </header>
-        {children}
-        <main className="py-2 md:w-11/12 mx-auto min-h-[calc(100vh-200px)]"></main>
+
+        <main className="py-2 md:w-11/12 mx-auto min-h-[calc(100vh-200px)]">
+          {children}
+        </main>
+
         <footer>
-          <Footer></Footer>
+          <Footer />
         </footer>
       </body>
     </html>

@@ -1,21 +1,33 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
+import { MongoClient, ServerApiVersion } from 'mongodb';
+
 const uri = process.env.MONGODB_URI;
 const dbName = process.env.DBNAME;
 
-const collections = {
-    PRODUCTS:'products',
-    // USERS:'users',
-    // ORDERS:'orders'
-};
-// Create a MongoClient with a MongoClientOptions object to set the Stable API version
+if (!uri) {
+  throw new Error('❌ MONGODB_URI is not defined in .env.local');
+}
+
+if (!dbName) {
+  throw new Error('❌ DBNAME is not defined in .env.local');
+}
+
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
     deprecationErrors: true,
-  }
+  },
 });
 
-export const dbConnect = async (cname) => {
-    return client.db(dbName).collection(cname);
+let clientPromise;
+
+if (!global._mongoClientPromise) {
+  global._mongoClientPromise = client.connect();
 }
+
+clientPromise = global._mongoClientPromise;
+
+export const dbConnect = async (collectionName) => {
+  const client = await clientPromise;
+  return client.db(dbName).collection(collectionName);
+};

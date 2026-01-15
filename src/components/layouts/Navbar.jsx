@@ -20,13 +20,15 @@ const Navbar = () => {
     setTheme(nextTheme);
   };
 
-  const nav = (
-    <>
-      <li><Navlink href="/">Home</Navlink></li>
-      <li><Navlink href="/products">Items</Navlink></li>
-      <li><Navlink href="/login">Login</Navlink></li>
-    </>
-  );
+const nav = (
+  <>
+    <li><Navlink href="/">Home</Navlink></li>
+    <li><Navlink href="/products">Products</Navlink></li>
+    <li><Navlink href="/login">Login</Navlink></li>
+  </>
+);
+
+
 
   return (
     <header className="sticky top-0 z-50 bg-base-100/90 backdrop-blur border-b border-base-300">
