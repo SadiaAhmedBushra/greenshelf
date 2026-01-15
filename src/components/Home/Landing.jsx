@@ -1,6 +1,4 @@
 import React from 'react';
-
-// import ScrollFade from '@/components/animations/ScrollFade';
 import Link from 'next/link'
 import ScrollFade from '../Animations/ScrollFade';
 
